@@ -11,14 +11,11 @@ module events::attendance_nft {
     use sui::url::{Self, Url};
     use std::string::{Self, String};
     use sui::event;
-    use sui::tx_context::{Self, TxContext};
     use std::hash;
     use sui::package;
     use sui::display;
     use sui::dynamic_field;
     use sui::clock::{Self, Clock};
-    use sui::object::{Self, UID, ID};
-    use sui::transfer;
 
     // Error codes
     const EInvalidPassword: u64 = 0;
